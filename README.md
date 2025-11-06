@@ -1,6 +1,6 @@
 # 🌀 Sonic Mania - Detecção de Estados dos Death Eggs com OpenCV
 
-Este projeto utiliza **visão computacional (OpenCV)** para identificar e rastrear os **estados de ataque dos Death Eggs** no jogo *Sonic Mania*.  
+Este projeto utiliza **visão computacional (OpenCV)** para identificar criar um dataset sobre **estados de ataque dos Death Eggs** no jogo *Sonic Mania* e utilizá-lo para treino de um modelo MLP para detecção.  
 A ideia central é capturar frames do jogo, processá-los em uma **grade (grid)** e aplicar técnicas de **detecção de cores e padrões** para entender o comportamento dos inimigos durante a batalha.
 
 ---
@@ -14,7 +14,7 @@ Essas variações podem indicar:
 - **Modo danificado**  
 - **Modo crítico**
 
-Através do uso de **OpenCV**, o projeto tenta reconhecer automaticamente essas mudanças analisando a distribuição de pixels vermelhos, amarelos e brancos em uma **malha (grid)** sobre a tela.
+Através do uso de **OpenCV**, o projeto tenta reconhecer automaticamente essas mudanças analisando a distribuição de pixels vermelhos em uma **malha (grid)** sobre a tela.
 
 ---
 
@@ -23,7 +23,7 @@ Através do uso de **OpenCV**, o projeto tenta reconhecer automaticamente essas 
 Desenvolver um modelo simples e interpretável capaz de:
 1. **Detectar** a presença dos Death Eggs na imagem;
 2. **Analisar o padrão de cor e movimento** em regiões específicas (grid);
-3. **Classificar o estado atual** (ex: ataque, neutro, dano);
+3. **Classificar o estado atual** (ataque ou neutro);
 4. **Fornecer uma visualização** do rastreamento em tempo real.
 
 ---
@@ -35,10 +35,8 @@ Desenvolver um modelo simples e interpretável capaz de:
 - 🔢 **NumPy**
 - 🧮 **scikit-learn** (para normalização e classificação)
 - 💾 **pickle** (para salvar e carregar modelos)
-- 🧱 **StandardScaler** (pré-processamento)
 - 🤖 **MLPClassifier** (classificador de estados com rede neural)
 
----
-
-## 🧩 Estrutura do Projeto
-
+## 👨‍💻 Autor
+**Silas Eufrásio**
+Projeto acadêmico e experimental com foco em Redes Neurais para detecção visual
